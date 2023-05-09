@@ -7,9 +7,11 @@ final String subtitle;
 final String link;
 final IconData icon;
 
-MenuItem({required this.title , required this.subtitle , required this.link , required this.icon});
-
-
+MenuItem({
+  required this.title , 
+  required this.subtitle , 
+  required this.link , 
+  required this.icon});
 }
 
  List<MenuItem> appMenuItems = <MenuItem> [
@@ -22,6 +24,6 @@ MenuItem({required this.title , required this.subtitle , required this.link , re
   MenuItem(
     title: 'Cards', 
     subtitle: 'Container stylized', 
-    link: '/card', 
+    link: '/cards', 
     icon: Icons.credit_card)  
 ];
