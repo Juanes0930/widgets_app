@@ -5,6 +5,7 @@ import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'Home_ Screen';
   const HomeScreen({super.key});
 
   @override
@@ -47,6 +48,12 @@ class _CustomListTile extends StatelessWidget {
         ),
         trailing: Icon(Icons.keyboard_arrow_right, color: colors.primary),
         onTap: () {
+          //Navigator.of(context).push(
+          // MaterialPageRoute(
+          //  builder:(context) => const ButtonsScreen(),
+          // ),
+          //);
+          //context.pushNamed(ButtonsScreen.name);
           context.push(menuItem.link);
         });
   }
